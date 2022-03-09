@@ -46,3 +46,8 @@
     border-radius: 4px;
     display: inline-block;
 }
+
+hr.solid {
+  border: 0;
+  border-top: 3px solid #bbb;
+}

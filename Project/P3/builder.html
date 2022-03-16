@@ -1,0 +1,268 @@
+<html>
+    <head>
+        <title>portfolio Builder </title> 
+        <meta charset="UTF-8">
+        <style>
+
+            .buttonboven {
+                
+                position: absolute;
+                border: none;
+                nav-up: 40px;
+                right: -60px;
+                width: 400px;
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            .loguit {
+                background-color:  #d64a60;
+                height: 35px;
+                width: 170px;
+                font-size: 20px;
+                border: none;
+                size-adjust: 9px;
+                border-radius: 4px;
+            }
+           
+            .export {
+                background-color: #6558f5;
+                height: 35px;
+                width: 170px;
+                font-size: 20px;
+                border: none;
+                text-decoration-color: whitesmoke;
+                size-adjust: 9px;
+                border-radius: 4px;
+            }
+
+            hr.solid {
+                border-top: 3px solid #c6c6c6;
+                }
+            .div {
+                width:100%;
+            }
+
+            .divider {
+                font-size: 16px;
+                font-weight: 400px;
+                background-color: #c6c6c6;
+                padding-right: 10px;
+                z-index: 10;
+                position: relative;
+                float: none;
+            }
+
+            .div-line {
+                border-bottom: 1px solid #e9e9e9;
+                border-top: 1px solid #e9e9e9;
+                width: 100%;
+                float: none;
+                height: 1px;
+                display: inline-block;
+                margin: -14px 0 25px 0;            
+            }
+
+            .p-linksbutton {
+                position: left;
+                height: 35px;
+                width: 170px;
+                font-size: 20px;
+                border: none;
+                size-adjust: 9px;
+                border-radius: 4px;
+            }
+
+            .paarsebutton {
+                border: none;
+                height: 35px;
+                width: 170px;
+                background-color: #6558f5;
+                text-decoration-color: whitesmoke;
+
+            }
+            
+            .huey {
+                position: relative;
+                left: -400px;
+                align-items: inherit;
+            }
+
+            .switch {
+            position: relative;
+            display: inline-block;
+            width: 42px;
+            height: 18px;
+            top: -12px;
+            align-items: inherit;
+
+            }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+            align-items: inherit;
+
+            }
+
+            /* The slider */
+            .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+            align-items: inherit;
+            }
+
+            .slider:before {
+            position: absolute;
+            content: "";
+            height: 13px;
+            width: 13px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+            align-items: inherit;
+            }
+
+            input:checked + .slider {
+            background-color: #2196F3;
+            }
+
+            input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+            }
+
+            input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+            }
+
+            /* Rounded sliders */
+            .slider.round {
+            border-radius: 18px;
+            align-items: inherit;
+            }
+
+            .slider.round:before {
+            border-radius: 50%;
+            align-items: inherit;
+
+            }
+        
+            .hr2 {
+                left: 344;
+                top: 40px;
+                transform: rotat(180deg);
+            }
+
+            .fname {
+                width: 200px;
+                height: 30px;
+                        }
+            .headerdivider {
+                background: #c0bafc;
+                width: 1px;
+                height: 633px;
+                position: absolute;
+                right: 1200px;
+                top: 65px;
+}
+        </style>
+    </head> 
+    <body>
+        <h class="buttonboven">
+            <button class="export" style="color: #dee4e8;" style="margin: 2px">delen/expoteren</button>
+            <button class="loguit" style="color: #dee4e8;" style="margin: 2px">Loguit</button>
+        </h> <br> <br> <br>
+        <p class="div">
+            <h3 class="divider"></h3>
+            <span class="div-line" style="margin-bottom:0;"></span>
+        </p>    
+        <p class="linksbutton">
+            <button class="paarsebutton" style=" color: #dee4e8;" top: 30; style="margin: 2px">extra tekst toevoegen</button> <br><br>
+            <button class="paarsebutton" style=" color: #dee4e8;" top: 30; style="margin: 2px">Foto toevoegen</button><br><br>
+        </p>
+        <div>
+            <div class="headerdivider"></div>
+        </div>
+        <p>selec aan/uit</p>
+        <div>
+            <input type="radio" id="huey" name="drone" value="huey"
+                    checked> <!--selecteren-->&nbsp;&nbsp;
+            <label class="switch"> <!--aan uit-->
+                <input type="checkbox">
+                <span class="slider"></span> 
+            </label class="switch">  <!--textbox-->
+                <input type="text" id="fname" name="fname" class="fname">
+
+            <br><br><br>
+            <input type="radio" id="huey" name="drone" value="huey"
+                    checked> <!--selecteren-->&nbsp;&nbsp;
+            <label class="switch"> 
+                <input type="checkbox"> <!--aan uit-->
+                    <span class="slider"></span> 
+                </label class="switch"> <!--textbox-->
+                    <input type="text" id="fname" name="fname" class="fname">
+                </label>
+            <br><br><br>
+            <input type="radio" id="huey" name="drone" value="huey"
+                checked> <!--selecteren-->&nbsp;&nbsp;
+            <label class="switch"> 
+                <input type="checkbox"> <!--aan uit-->
+                <span class="slider"></span>
+                </label class="switch">  <!--textbox-->
+                    <input type="text" id="fname" name="fname" class="fname">
+            </label>
+            <br><br><br>
+            <input type="radio" id="huey" name="drone" value="huey"
+            checked> <!--selecteren-->&nbsp;&nbsp;
+            <label class="switch"> 
+                <input type="checkbox"> <!--aan uit-->
+                 <span class="slider"></span>
+            </label class="switch">  <!--textbox-->
+                <input type="text" id="fname" name="fname" class="fname">
+            </label>
+            <br><br><br>
+            <input type="radio" id="huey" name="drone" value="huey"
+                checked> <!--selecteren-->&nbsp;&nbsp;
+             <label class="switch"> 
+            <input type="checkbox"> <!--aan uit-->
+                <span class="slider"></span>
+            </label class="switch">  <!--textbox-->
+                <input type="text" id="fname" name="fname" class="fname">
+            </label>
+            <br><br><br>
+            <input type="radio" id="huey" name="drone" value="huey"
+                checked><!--selecteren-->&nbsp;&nbsp;
+            <label class="switch">  <!--aan uit-->
+                <input type="checkbox">
+                    <span class="slider"></span>
+                </label class="switch"> <!--textbox-->
+                    <input type="text" id="fname" name="fname" class="fname">
+            </label>
+            <br><br><br>
+            <input type="radio" id="huey" name="drone" value="huey" 
+                checked><!--selecteren-->&nbsp;&nbsp;
+            <label class="switch"> 
+                <input type="checkbox"> <!--aan uit-->
+                <span class="slider"></span>
+            </label class="switch">  <!--textbox-->
+            <input type="text" id="fname" name="fname" class="fname">
+            </label>
+        </div> 
+        
+
+       
+    </body>
+    </html>

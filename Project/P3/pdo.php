@@ -21,7 +21,7 @@
   $host = 'localhost';
   $db   = 'projectp3';
   $user = 'db_user';
-  $pass = 'BTFe/@mze_K@JNGb';
+  $pass = ']I(5tpwlmf4qyHnV';
   $charset = 'utf8mb4';
   
   

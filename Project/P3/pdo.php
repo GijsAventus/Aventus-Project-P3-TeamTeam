@@ -9,14 +9,7 @@
   <body>
   <p>Tekst.</p>
   <?php
-   
-  function preprint_r( $arr ) {
-    echo '<pre>'; 
-    print_r( $arr );
-    echo '</pre>'; 
-  }  
-
-  
+     
   //verdindingsvariabelen database 
   $host = 'localhost';
   $db   = 'projectp3';

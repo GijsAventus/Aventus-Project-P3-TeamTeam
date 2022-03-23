@@ -1,14 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PHP Script</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-  <p>Tekst.</p>
-  <?php
+<?php
      
   //verdindingsvariabelen database 
   $host = 'localhost';
@@ -30,7 +20,6 @@
   //verbinding maken met database
   try {
     $pdo = new PDO($dsn, $user, $pass, $options);
-    echo('Connectie succesvol.');
   } catch (\PDOException $e) {
     throw new \PDOException($e->getMessage(), (int)$e->getCode());
   }   
@@ -38,9 +27,3 @@
   ?>
   
   </body>
-</html>
-
-
-
-
-

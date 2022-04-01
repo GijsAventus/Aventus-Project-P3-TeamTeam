@@ -1,4 +1,4 @@
-#dit bestand gebruiken voor classes
+#dit bestand gebruiken voor classes (logica & functies)
 
 
 #class voor opdracht 1
@@ -12,6 +12,6 @@ class relax:
         pass
 
 #class voor opdracht 3
-class xxx: #voor opdracht 3
+class xxx:
     def __init__(self) -> None:
         pass

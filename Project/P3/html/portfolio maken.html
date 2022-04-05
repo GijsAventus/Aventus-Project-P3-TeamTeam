@@ -1,0 +1,333 @@
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>portfolio Builder </title> 
+            <meta charset="UTF-8">
+
+            <style  type="text/css">
+
+                .buttonboven {
+                    
+                    position: absolute;
+                    border: none;
+                    nav-up: 40px;
+                    right: -60px;
+                    width: 400px;
+                    padding: 10px;
+                    font-size: 20px;
+                }
+
+                .loguit {
+                    background-color:  #d64a60;
+                    height: 35px;
+                    width: 170px;
+                    font-size: 20px;
+                    border: none;
+                    size-adjust: 9px;
+                    border-radius: 4px;
+                }
+            
+                .export {
+                    background-color: #6558f5;
+                    height: 35px;
+                    width: 170px;
+                    font-size: 20px;
+                    border: none;
+                    text-decoration-color: whitesmoke;
+                    size-adjust: 9px;
+                    border-radius: 4px;
+                }
+
+                hr.solid {
+                    border-top: 3px solid #c6c6c6;
+                    }
+                .div {
+                    width:100%;
+                }
+
+                .divider {
+                    font-size: 16px;
+                    font-weight: 400px;
+                    background-color: #c6c6c6;
+                    padding-right: 10px;
+                    z-index: 10;
+                    position: relative;
+                    float: none;
+                }
+
+                .div-line {
+                    border-bottom: 1px solid #e9e9e9;
+                    border-top: 1px solid #e9e9e9;
+                    width: 100%;
+                    float: none;
+                    height: 1px;
+                    display: inline-block;
+                    margin: -14px 0 25px 0;            
+                }
+
+                .p-linksbutton {
+                    position: left;
+                    height: 35px;
+                    width: 170px;
+                    font-size: 20px;
+                    border: none;
+                    size-adjust: 9px;
+                    border-radius: 4px;
+                }
+
+                .paarsebutton {
+                    border: none;
+                    height: 35px;
+                    width: 170px;
+                    background-color: #6558f5;
+                    text-decoration-color: whitesmoke;
+
+                }
+                
+                .huey {
+                    position: relative;
+                    left: -400px;
+                    align-items: inherit;
+                }
+
+                .switch {
+                position: relative;
+                display: inline-block;
+                width: 42px;
+                height: 18px;
+                top: -12px;
+                align-items: inherit;
+
+                }
+
+            
+                .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+                align-items: inherit;
+
+                }
+
+                .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
+                align-items: inherit;
+                }
+
+                .slider:before {
+                position: absolute;
+                content: "";
+                height: 13px;
+                width: 13px;
+                left: 2px;
+                bottom: 2px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+                align-items: inherit;
+                }
+
+                input:checked + .slider {
+                background-color: #2196F3;
+                }
+
+                input:focus + .slider {
+                box-shadow: 0 0 1px #2196F3;
+                }
+
+                input:checked + .slider:before {
+                -webkit-transform: translateX(26px);
+                -ms-transform: translateX(26px);
+                transform: translateX(26px);
+                }
+
+     
+                .slider.round {
+                border-radius: 18px;
+                align-items: inherit;
+                }
+
+                .slider.round:before {
+                border-radius: 50%;
+                align-items: inherit;}
+            
+                .hr2 {
+                    left: 344;
+                    top: 0px;
+
+                    transform: rotat(180deg);  }
+                .naam {
+                    width: 200px;
+                    height: 30}
+
+                .headerdivider {
+                    background: #c0bafc;
+                    width: 1px;
+                    height: 600px;
+                    position: absolute;
+                    right: 1200px;
+                    top: 130px; }   
+            
+
+                .hobbyintresse {
+                    position: absolute; 
+                    right:40px;
+                    width: 50px;
+                    height: 60px;
+                    top: 210px 
+                }
+
+                .textarea {
+                    resize:none }
+                
+                .werkervaring {
+                    position: absolute; 
+                    right:40px;
+                    width: 50px;
+                    height: 60px;
+                    top: 390px }
+                
+                    .vaardigheden {
+                    position: absolute; 
+                    right: 100px;
+                    width: 50px;
+                    height: 60px;
+                    top: 570px }
+
+                .studieloopbaan {
+                    position: absolute;
+                    right: 50px;
+                    width: 50px;
+                    height: 60px;
+                    top:570px
+                }
+
+                
+                .certficaten {
+                    position: absolute;
+                    right: 50px;
+                    width: 50px;
+                    height: 60px;
+                    top:570px }
+
+            
+                    .naam {
+                        size: 30px;
+                    }
+               
+
+            </style>
+        <script type="text/javascript">
+    
+
+
+        </script>
+
+
+        </head>
+        <body>
+            
+        
+            <div style="right: 240px; top: 160px; position: absolute;">
+                <p>Hobby's & intresses</p>
+            </div>
+            <div style="right: 285px; top: 340px; position: absolute;">
+                <p>Werkervaring</p>
+            </div>
+            <div style="right: 280px; top: 520px; position: absolute;">
+                <p>Vaardigheden</p>
+            </div>
+            <div style="right: 670px; top: 520px; position: absolute;">
+                <p>Studieloopbaan</p>
+            </div>
+            <div style="right: 1070px; top: 520px; position: absolute;">
+                <p>Certificaten</p>
+            </div>
+
+            <div class="naam" style="position:absolute; border: none; left: 700px; top: 120px;">
+                <input placeholder="naam" type="text" id="naam" placeholder="naam" name="textarea" class="textarea" cols="5" rows="3"
+                style="border: none; font-size: 30px;"></input>
+            </div>
+
+            <div class="adres" style="position:absolute; border: none; left:700px; top: 170px;">
+                <input placeholder="adres" type="text" id="adres" name="textarea" class="textarea" cols="1" rows="1"
+                style="border: none; font-size: 15px;"></input>
+            </div>
+
+
+            <div class="hobbyintresse" style="right: 320px;">
+                <textarea  id="hobby2" placeholder="hobby's & intresses" name="textarea" class="textarea" cols="45" rows="6"></textarea>
+            </div>
+
+            <div class="werkervaring" style="right: 320px;">
+                <textarea id="werkervaring2" placeholder="werkervaring" name="textarea" class="textarea" cols="45" rows="6"></textarea>
+            </div>
+
+            <div class="vaardigheden" style="right: 320px;">
+                <textarea id="vaardigheden2" placeholder="vaardigheden" name="textarea" class="textarea" cols="45" rows="6"></textarea>
+            </div>
+
+            <div class="studieloopbaan" style="right: 720px;">
+                <textarea id="studieloopbaan2"placeholder="studieloopbaan" name="textarea" class="textarea" cols="45" rows="6"></textarea>
+            </div>
+
+            <div class="certficaten" style="right: 1100px;">
+                <textarea id="certificaten2" placeholder="Certificaten / Diploma's " name="textarea" class="textarea" cols="45" rows="6"></textarea>
+            </div>
+
+            <h class="buttonboven">
+                <input  onclick="location.href='http://localhost/p3/prototype/export.html' "value="export" id="export" name="export" type="button" style=" font-weight: 900; background-color: mediumslateblue; border: none; color: white; width: 150px; height: 50px;"></input>
+                <input onclick="location.href='http://localhost/p3/prototype/login.html'"value="loguit" id="loguit" name="loguit" type="button" style=" font-weight: 900; background-color: red; border: none; color:white; width: 150px; height: 50px;"></input>
+               
+                
+            </h><br><br><br>
+            <p class="div">
+                <h3 class="divider"></h3>
+                <span class="div-line" style="margin-bottom:0;"></span>
+            </p> 
+            <form action='' method='POST' enctype='multipart/form-data'>
+                <input type='file' name='userFile'><br>
+                <input type='submit' name='upload_btn' value='upload'>
+            </form>
+            <div>
+                <div class="headerdivider"></div>
+            </div>
+            <button style="font-weight: 1000;">B</button><br><br>  
+            <label><p>selecteren |  namen</p></label>  
+            <div><br >
+                <input type="radio" id="huey1" name="drone" value="huey"
+                        checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="thick" style="font-family: Arial">naam</label>
+                <br><br ><br>
+                <input type="radio" id="huey2" name="drone" value="huey"
+                checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="thick" style="font-family: Arial">geboortedatum</label>
+                <br><br><br>
+                <input type="radio" id="huey3" name="drone" value="huey"
+                        checked> <!--selecteren-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="thick" style="font-family: Arial">adres</label>
+                <br><br><br>
+                <input type="radio" id="huey4" name="drone" value="huey"
+                    checked> <!--selecteren-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="thick" style="font-family: Arial">Werkervaring</label>
+                <br><br><br>
+                <input type="radio" id="huey5" name="drone" value="huey"
+                checked> <!--selecteren-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="thick" style="font-family: Arial">Studieloopbaan</label>
+                <br><br><br>
+                <input type="radio" id="huey6" name="drone" value="huey"
+                    checked> <!--selecteren-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label class="thick" style="font-family: Arial">certficaten/diploma's</label>
+                <br><br><br>
+                <input type="radio" id="huey7" name="drone" value="huey"
+                    checked><!--selecteren-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="thick" style="font-family: Arial">vaardigheden</label>
+                <br><br><br>
+                <input type="radio" id="huey8" name="drone" value="huey" 
+                    checked><!--selecteren-->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="thick" style="font-family: Arial">hobby's & intresses</label>
+            </div> 
+            
+
+        </body>
+        </html>

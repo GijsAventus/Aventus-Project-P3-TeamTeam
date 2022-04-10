@@ -28,7 +28,7 @@ def clearFrames():
 def calcBtw():
     global rkConsole
     btw = rkBtwInput.get("1.0", END)
-    rkColsole.insert(END, f"De te betalen BTW is {classes.calculate.btw(btw)}")
+    rkConsole.insert(END, f"De te betalen BTW is {classes.calculate.btw(btw)}")
 
 def calcReistijd():
     rkRstInput1.get("1.0", END)

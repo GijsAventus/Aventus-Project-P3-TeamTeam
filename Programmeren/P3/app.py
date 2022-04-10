@@ -1,8 +1,7 @@
 #hier is de welkelijke tkinter app
 
 #imports
-from asyncio.windows_events import NULL
-import classes
+from classes import *
 from tkinter import *
 
 
@@ -27,8 +26,8 @@ def clearFrames():
 
 def calcBtw():
     global rkConsole
-    btw = rkBtwInput.get("1.0", END)
-    rkConsole.insert(END, f"De te betalen BTW is {classes.calculate.btw(btw)}")
+    inputValue = rekentool.rkBtwInput.get("1.0", END)
+    rkConsole.insert(END, f"De te betalen BTW is {calculate.btw(inputValue)}")
 
 def calcReistijd():
     rkRstInput1.get("1.0", END)
@@ -70,7 +69,7 @@ rkBtwInputLabel.grid(row=2, column=0, sticky=W)
 rkBtwInput = Text(rekentool, width=15, height=1)
 rkBtwInput.grid(row=3,column=0, sticky=W)
 
-rkBtwSubmit = Button(rekentool, text="Bevestigen", command=calcBtw())
+rkBtwSubmit = Button(rekentool, text="Bevestigen", command=calcBtw)
 
 
 #reistijd calculator

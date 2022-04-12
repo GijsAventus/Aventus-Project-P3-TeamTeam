@@ -6,30 +6,46 @@ from math import pi
 class calculate:
     #functie voor 1.1
     def btw(num):
-        btw = round(num * 0.21, 2)
-        return f"De btw is {btw}."
-    
+        try:
+            btw = round(float(num) * 0.21, 2)
+            return f"De te betalen btw is {btw}."
+        except ValueError:
+            return "De input is niet geldig."
+            
     #functie voor 1.2
     def reistijd(afstand, snelheid):
-        return f"De reistijd is {str(afstand / snelheid)}"
+        try:
+            returnValue = f"De reistijd is {str(float(afstand) / float(snelheid))} seconden."
+            return returnValue
+        except ValueError:
+            return "De input is niet geldig."
 
     #functie voor 1.3
     def vierkant(lengte, breedte):
-        oppervlakte = lengte * breedte
-        omtrek = (lengte + breedte) * 2
-        string1 = f"Het vierkant heeft een oppervlakte van {oppervlakte} en een omtrek van {omtrek}."
-        return string1
+        try:
+            oppervlakte = float(lengte) * float(breedte)
+            omtrek = (float(lengte) + float(breedte)) * 2
+            string1 = f"Het vierkant heeft een oppervlakte van {oppervlakte}cm en een omtrek van {omtrek}cm."
+            return string1
+        except ValueError:
+            return "De input is niet geldig."
 
     #functie voor 1.4
     def cirkel(diameter):
-        oppervlakte = ((diameter/2) ** 2) * pi
-        omtrek = diameter * pi
-        return f"De cirkel heeft een oppervlakte van {str(oppervlakte)[0:5]} en een omtrek van {str(omtrek)[0:5]}."
+        try:
+            oppervlakte = ((float(diameter)/2) ** 2) * pi
+            omtrek = float(diameter) * pi
+            return f"De cirkel heeft een oppervlakte van {str(round(oppervlakte, 2))}cm en een omtrek van {str(round(omtrek, 2))}cm."
+        except ValueError:
+            return "De input is niet geldig."
 
     #functie voor 1.5
     def procent(num1, num2):
-        pct = (num1 / num2) * 100
-        return f"Het getal 1 is {pct} procent groot als getal 2."
+        try:
+            pct = (float(num1) / float(num2)) * 100
+            return f"Het getal 1 is {pct} procent in vergelijking met getal 2."
+        except ValueError:
+            return "De input is niet geldig."
         
 
 #class voor opdracht 2

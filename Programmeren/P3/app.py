@@ -1,5 +1,3 @@
-#hier is de welkelijke tkinter app
-
 #imports
 from classes import *
 from tkinter import *
@@ -168,6 +166,9 @@ label_1.pack()
 opdr3 = Frame(borderwidth=10)
 label_1 = Label(opdr3, text="OPDRACHT 3", bg = "red", fg="white", width=20, height=8)
 label_1.pack()
+
+e = Label(opdr3, text="bla bla")
+e.pack()
 
 
 

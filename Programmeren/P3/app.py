@@ -164,11 +164,29 @@ label_1.pack()
 
 #opdracht 3
 opdr3 = Frame(borderwidth=10)
-label_1 = Label(opdr3, text="OPDRACHT 3", bg = "red", fg="white", width=20, height=8)
-label_1.pack()
 
-e = Label(opdr3, text="bla bla")
-e.pack()
+listbox_tasks=Listbox(opdr3, height=33, width=210)
+listbox_tasks.pack(side=LEFT)
+
+scrollbar_tasks= Scrollbar(opdr3)
+scrollbar_tasks.pack(side=RIGHT, fill=Y)
+
+listbox_tasks.config(yscrollcommand=scrollbar_tasks.set)
+scrollbar_tasks.config(command=listbox_tasks.yview)
+
+entry_task=Entry(opdr3, width=212)
+entry_task.pack()
+
+#Buttons 
+button_add_task = Button(opdr3, text='Taak Toevoegen', width=200, command=add_task)
+button_add_task.pack()
+button_delete_task = Button(opdr3, text='Taken Verwijderen', width=200, command=delete_task)
+button_delete_task.pack()
+button_load_task = Button(opdr3, text='Taken Laden', width=200, command=load_task)
+button_load_task.pack()
+button_save_task = Button(opdr3, text='Taken Opslaan', width=200, command=save_task)
+button_save_task.pack()
+
 
 
 

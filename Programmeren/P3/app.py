@@ -46,8 +46,8 @@ def calcPct():
     input2 = rkPctInput2.get("1.0", END)
     rkConsole.insert("1.0", f"\n{calculate.procent(input1, input2)}\n")
     
-    def add_task():
-    task= entry_task.get()
+def add_task():
+    task = entry_task.get()
     if task !='':
         listbox_tasks.insert(tkinter.END, task)
         entry_task.delete(0, tkinter.END)

@@ -1,7 +1,8 @@
 #imports
 from classes import *
 from tkinter import *
-
+import tkinter.messagebox
+import pickle 
 
 #functies
 
@@ -44,6 +45,36 @@ def calcPct():
     input1 = rkPctInput1.get("1.0", END)
     input2 = rkPctInput2.get("1.0", END)
     rkConsole.insert("1.0", f"\n{calculate.procent(input1, input2)}\n")
+    
+    def add_task():
+    task= entry_task.get()
+    if task !='':
+        listbox_tasks.insert(tkinter.END, task)
+        entry_task.delete(0, tkinter.END)
+    else:
+        tkinter.messagebox.showwarning(title='Waarschuwing!', message='Je moet een taak uitvoeren.')
+
+def delete_task():
+    try:
+        task_index=listbox_tasks.curselection()[0]
+        listbox_tasks.delete(task_index)
+    except:
+        tkinter.messagebox.showwarning(title='Waarschuwing!', message='Je moet een taak selecteren om deze te kunnen verwijderen.')
+
+def load_task():
+    try:
+       tasks=pickle.load(open('Taak.data', 'rb'))
+       listbox_tasks.delete(0, tkinter.END)
+       for task in tasks:
+           listbox_tasks.insert(tkinter.END, task)
+    except:
+        tkinter.messagebox.showwarning(title='Waarschuwing!', message='Kan het bestand niet vinden of ophalen.')
+
+
+
+def save_task():
+    tasks = listbox_tasks.get(0, listbox_tasks.size())
+    pickle.dump(tasks, open('Taak.data', 'wb'))
 
 #window
 window = Tk()
